@@ -1,4 +1,4 @@
-
+<!-- <?php include('server.php') ?> -->
 <html>
 <head>
 <link href="styles.css" rel="stylesheet">
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styling.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="icon" href="icon.jpg" type="image/x-icon">
+  <link rel="icon" href="C:\Users\Anushka\OneDrive\Desktop\icon.jpg" type="image/x-icon">
 </head>
 <body>
 <!-==========NavBar=======->
@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-        <img src="icon.jpg" alt="icon" width="30px" height="30px">
+        <img src="C:\Users\Anushka\OneDrive\Desktop\icon.jpg" alt="icon" width="30px" height="30px">
         FOTOPHIL
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,8 +40,7 @@
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="button" onclick="redirectToLoginPage()">Login</button>     
       </form>
     </div>
   </div>
@@ -58,21 +57,21 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://www.mickeyshannon.com/photos/fine-art-nature-photography.jpg" alt="Nature Photography" width="1100" height="500">
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/fine-art-nature-photography.jpg" alt="Nature Photography" width="1100" height="500">
       <div class="carousel-caption">
         <h3>Nature Photography</h3>
         <p><i>“Look deep into nature, and then you will understand everything better.”</i></p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2019/05/93c641a73b3268c7aa614ce646c1517d.jpg" alt="Architectural Photography" width="1100" height="500">
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/architecture.jpg" alt="Architectural Photography" width="1100" height="500">
       <div class="carousel-caption">
         <h3>Architectural Photography</h3>
         <p><i>"We shape our buildings; thereafter they shape us."<br>-Winston Churchill</i></p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="https://passionpassport-1.s3.amazonaws.com/wp-content/uploads/2017/09/09231145/yanan-street-photography-header-1200x764.jpg" alt="Street Photography" width="1100" height="500">
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/street-photography" alt="Street Photography" width="1100" height="500">
       <div class="carousel-caption">
         <h3>Street Photography</h3>
         <p><i>Anyone can shoot chaos. But the most perceptive photographers can make compelling pictures out of uninteresting moments.<br> – Alex Tehrani</i></p>
@@ -227,12 +226,19 @@
 <h2><br><Br></h2>
         <div class="section-title">
 	  <h1>Gallery</h1>
+    <!-- Modal for fullscreen image -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption"></div>
+</div>
+
           <h5><strong><br><i>"What I like about photographs is that they capture a moment that's gone forever. Impossible to reproduce."</i></strong></h5>
           <p></p>
         </div>
 	  <div class="gallery-image">
     <div class="img-box">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/starfield-library-seoul-south-korea-1596477723.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/photo-1542051841857-5f90071e7989.jpeg" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Library</p>
@@ -241,7 +247,7 @@
       </div> 
     </div>
     <div class="img-box">
-      <img src="https://be81553daf735f8e1213-ba7f58ff2df9d58b5848190b28943c32.ssl.cf1.rackcdn.com/_MG_5396_7_8_tonemapped_1.jpg" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/_MG_5396_7_8_tonemapped_1.jpg" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Night Sky</p>
@@ -250,7 +256,7 @@
       </div>
     </div>
 	<div class="img-box">
-      <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/02/examples-of-long-exposure-photography-beach-with-people-and-ferris-wheel-in-background.jpg" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/examples-of-long-exposure-photography-beach-with-people-and-ferris-wheel-in-background.webp" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Long-Exposure Photography</p>
@@ -259,7 +265,7 @@
       </div>
     </div>
     <div class="img-box">
-      <img src="https://0.soompi.io/wp-content/uploads/2022/05/07165841/lee-do-hyun.png" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/lee-do-hyun.png" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Portrait</p>
@@ -268,7 +274,7 @@
       </div>
     </div>
     <div class="img-box">
-      <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eSUyMGFlc3RoZXRpY3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/photo-1542051841857-5f90071e7989.jpeg" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Aesthetic</p>
@@ -277,7 +283,7 @@
       </div> 
     </div>
     <div class="img-box">
-      <img src="https://thetulumbible.com/wp-content/uploads/2022/07/best-tulum-music-festivals.jpg" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/best-tulum-music-festivals.webp" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Event</p>
@@ -286,7 +292,7 @@
       </div> 
     </div>
     <div class="img-box">
-      <img src="https://cdn.youpic.com/large/305592_OlJPScIfXeSqKfDd_452939.jpg" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/305592_OlJPScIfXeSqKfDd_452939.jpg" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">City</p>
@@ -295,7 +301,7 @@
       </div> 
     </div>
     <div class="img-box">
-      <img src="https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/pexels-photo-949670.jpeg" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p style="font-family: Georgia, serif;">Fashion Photography</p>
@@ -353,14 +359,14 @@ book.</blockquote>
         <div class="container marketing">
         <div class="row">
             <div class="col-lg-6">
-              <img class="img-thumbnail" src="https://img.freepik.com/premium-vector/young-girl-anime-style-character-vector-illustration-design-manga-anime-girl_147933-100.jpg" alt="Generic placeholder image" width="300" height="300">
+              <img class="img-thumbnail" src="https://github.com/gummitha-anushka/fotophil/blob/main/images/young-girl-anime-style-character-vector-illustration-design-manga-anime-girl_147933-100.avif" alt="Generic placeholder image" width="300" height="300">
               <h2>M. Arpana</h2>
               
              <p>The tab-size CSS property is set the number of spaces each tab character will display. Changing this value allows inserting the needed amount of space on one tab character. This method however only works with pre-formatted text<br></p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-6">
-              <img class="img-thumbnail" src="https://1fid.com/wp-content/uploads/2022/07/girl-anime-wallaper-51.jpg" width="300" height="300">
+              <img class="img-thumbnail" src="https://github.com/gummitha-anushka/fotophil/blob/main/images/beautiful-cute-anime-girl-innocent-anime-teenage_744422-6819.avif" width="300" height="300">
              
               <h2>G. Anushka</h2>
 <p>The tab-size CSS property is set the number of spaces each tab character will display. Changing this value allows inserting the needed amount of space on one tab character. This method however only works with pre-formatted text<br></p>
@@ -451,6 +457,40 @@ book.</blockquote>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+  function redirectToLoginPage() {
+      // Redirect to the login_page.html
+      window.location.href = "login_page.html";
+  }
+  // Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+// Modal functionality
+var modal = document.getElementById("imageModal");
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+
+document.querySelectorAll('.gallery-image img').forEach(function(image) {
+    image.addEventListener('click', function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
+});
+
+// Close modal on click
+document.querySelector('.close').onclick = function() {
+    modal.style.display = "none";
+}
+
+</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c29919d0957f383","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
