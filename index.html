@@ -1,4 +1,4 @@
-<!-- <?php include('server.php') ?> -->
+
 <html>
 <head>
 <link href="styles.css" rel="stylesheet">
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styling.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="icon" href="C:\Users\Anushka\OneDrive\Desktop\icon.jpg" type="image/x-icon">
+  <link rel="icon" href="icon.jpg" type="image/x-icon">
 </head>
 <body>
 <!-==========NavBar=======->
@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-        <img src="C:\Users\Anushka\OneDrive\Desktop\icon.jpg" alt="icon" width="30px" height="30px">
+        <img src="icon.jpg" alt="icon" width="30px" height="30px">
         FOTOPHIL
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,8 @@
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <button class="btn btn-outline-success" type="button" onclick="redirectToLoginPage()">Login</button>     
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -57,22 +58,22 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/fine-art-nature-photography.jpg" alt="Nature Photography" width="1100" height="500">
+            <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/fine-art-nature-photography.jpg" alt="Nature Photography" width="1100" height="500">
       <div class="carousel-caption">
         <h3>Nature Photography</h3>
         <p><i>“Look deep into nature, and then you will understand everything better.”</i></p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/architecture.jpg" alt="Architectural Photography" width="1100" height="500">
-      <div class="carousel-caption">
+            <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/architecture.jpg" alt="Architectural Photography" width="1100" height="500">
+	<div class="carousel-caption">
         <h3>Architectural Photography</h3>
         <p><i>"We shape our buildings; thereafter they shape us."<br>-Winston Churchill</i></p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/street-photography" alt="Street Photography" width="1100" height="500">
-      <div class="carousel-caption">
+            <img src="https://github.com/gummitha-anushka/fotophil/blob/main/images/street-photography" alt="Street Photography" width="1100" height="500">
+	<div class="carousel-caption">
         <h3>Street Photography</h3>
         <p><i>Anyone can shoot chaos. But the most perceptive photographers can make compelling pictures out of uninteresting moments.<br> – Alex Tehrani</i></p>
       </div>   
@@ -226,13 +227,6 @@
 <h2><br><Br></h2>
         <div class="section-title">
 	  <h1>Gallery</h1>
-    <!-- Modal for fullscreen image -->
-<div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImage">
-  <div id="caption"></div>
-</div>
-
           <h5><strong><br><i>"What I like about photographs is that they capture a moment that's gone forever. Impossible to reproduce."</i></strong></h5>
           <p></p>
         </div>
@@ -457,40 +451,6 @@ book.</blockquote>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-  function redirectToLoginPage() {
-      // Redirect to the login_page.html
-      window.location.href = "login_page.html";
-  }
-  // Smooth scroll for all anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
-
-// Modal functionality
-var modal = document.getElementById("imageModal");
-var modalImg = document.getElementById("modalImage");
-var captionText = document.getElementById("caption");
-
-document.querySelectorAll('.gallery-image img').forEach(function(image) {
-    image.addEventListener('click', function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    });
-});
-
-// Close modal on click
-document.querySelector('.close').onclick = function() {
-    modal.style.display = "none";
-}
-
-</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c29919d0957f383","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
